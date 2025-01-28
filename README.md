@@ -12,3 +12,16 @@ Roda o test
 ```
 php artisan test tests/Unit/PostModelFunctionalityTest.php
 ```
+
+### Testes e bancos de dados
+
+```
+Cria o arquivo test
+```
+php artisan make:test PostCreationTest --unit
+```
+
+Roda o test
+```
+php artisan test tests/Unit/PostCreationTest.php
+```
