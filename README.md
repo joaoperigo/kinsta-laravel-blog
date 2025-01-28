@@ -2,38 +2,52 @@
 
 https://github.com/VirtuaCreative/kinsta-laravel-blog
 
-
-Cria o arquivo test
+### Create a Test
+Create test file
 ```
 php artisan make:test PostModelFunctionalityTest --unit
 ```
 
-Roda o test
+Run test
 ```
 php artisan test tests/Unit/PostModelFunctionalityTest.php
 ```
 
-### Testes e bancos de dados
+### DataBase Tests
 
 
-Cria o arquivo test
+Create test file
 ```
 php artisan make:test PostCreationTest --unit
 ```
 
-Roda o test
+Run test
 ```
 php artisan test tests/Unit/PostCreationTest.php
 ```
 
-### Teste de recursos
+### Features Tests
 
-Cria o arquivo test
+Create test file
 ```
 php artisan make:test PostControllerTest
 ```
 
-Roda o test
+Run test
 ```
 php artisan test tests/Feature/PostControllerTest.php
+```
+
+### See test coverage
+
+Retrieves a percentage of how much instances were tested. Like, when this line on readme was commit only 83% of PostController was coveraged
+
+See all percentage of coverage in terminal
+```
+php artisan test --coverage
+```
+
+See in terminal, specified minimum coverage 
+```
+php artisan test --coverage --min=85
 ```
