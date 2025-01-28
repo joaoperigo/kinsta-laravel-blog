@@ -2,6 +2,13 @@
 
 https://github.com/VirtuaCreative/kinsta-laravel-blog
 
+
+Cria o arquivo test
 ```
 php artisan make:test PostModelFunctionalityTest --unit
+```
+
+Roda o test
+```
+php artisan test tests/Unit/PostModelFunctionalityTest.php
 ```
